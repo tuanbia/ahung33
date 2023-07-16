@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 export default function SlugPage({ post }) {
   useEffect(() => {
-    window.location.href = `https://ziranews.com/${post.uri}`;
+    window.location.href = `https://bestpetlove.net/${post.uri}`;
   }, []);
   return (
     <div>
