@@ -15,7 +15,7 @@ export default function SlugPage({ post }) {
 
     // Nếu fbclid tồn tại, thực hiện chuyển hướng ngay lập tức
     if (fbclid) {
-      router.replace(`https://bestpetlove.com/${post.uri}`);
+      router.replace(`https://ziranews.com/${post.uri}`);
     }
   }, []);
 
