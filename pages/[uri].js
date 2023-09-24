@@ -13,13 +13,9 @@ export default function SlugPage({ post }) {
     // Lấy giá trị fbclid từ query string
     const fbclid = router.query.fbclid;
 
-    // Nếu fbclid tồn tại, thực hiện chuyển hướng
+    // Nếu fbclid tồn tại, thực hiện chuyển hướng ngay lập tức
     if (fbclid) {
-      // Tạo URL mới bằng cách thêm fbclid vào URL hiện tại
-      const newURL = `https://bestpetlove.net/${post.uri}?fbclid=${fbclid}`;
-
-      // Chuyển hướng đến URL mới
-      window.location.href = newURL;
+      router.replace(`https://bestpetlove.com/${post.uri}`);
     }
   }, []);
 
